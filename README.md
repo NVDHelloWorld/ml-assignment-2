@@ -3,7 +3,7 @@
 **Author:** Navdeep Doriya  
 **Roll Number:** M26MER005  
 **Random Seed:** 26005 (derived deterministically from roll number numeric characters)  
-**Repository:** [https://github.com/NavdeepDoriya/ml-assignment-2](https://github.com/NavdeepDoriya/ml-assignment-2)  
+**Repository:** [https://github.com/NVDHelloWorld/ml-assignment-2](https://github.com/NVDHelloWorld/ml-assignment-2)  
 
 ---
 
