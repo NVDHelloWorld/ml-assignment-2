@@ -1,0 +1,241 @@
+{
+  "student": {
+    "name": "Navdeep Doriya",
+    "roll_number": "M26MER005",
+    "seed": 26005
+  },
+  "question_1": {
+    "selected_max_depth": "None",
+    "selected_min_samples_leaf": 1,
+    "train_accuracy": 1.0,
+    "validation_accuracy": 0.6125,
+    "test_accuracy": 0.4625,
+    "leaf_statistics": {
+      "number_of_leaves": 46,
+      "mean_samples_per_leaf": 5.2174,
+      "fraction_singleton_leaves": 0.1304
+    }
+  },
+  "question_2": {
+    "toy_verification": {
+      "error": 0.3333333333333333,
+      "threshold": 0.6666666666666667,
+      "alpha": 1.3862943611198908
+    },
+    "boosting": {
+      "selected_depth": 4,
+      "selected_rounds": 50,
+      "train_accuracy": 0.9375,
+      "val_accuracy": 0.475,
+      "test_accuracy": 0.3625,
+      "difficult_sample": {
+        "train_idx": 142,
+        "dataset_idx": 238,
+        "class": 23,
+        "final_weight": 0.050152398180009106
+      }
+    },
+    "bagging": {
+      "selected_B": 200,
+      "val_accuracy": 0.9,
+      "clean_test_accuracy": 0.8875
+    },
+    "comparison_bagging_vs_boosting": [
+      {
+        "Method": "Bagging",
+        "Learners": 25,
+        "Train Accuracy": 1.0,
+        "Validation Accuracy": 0.8,
+        "Clean Test Accuracy": 0.8375,
+        "Training Time (s)": 39.92
+      },
+      {
+        "Method": "Boosting",
+        "Learners": 25,
+        "Train Accuracy": 0.4625,
+        "Validation Accuracy": 0.3125,
+        "Clean Test Accuracy": 0.2,
+        "Training Time (s)": 11.6
+      },
+      {
+        "Method": "Bagging",
+        "Learners": 50,
+        "Train Accuracy": 1.0,
+        "Validation Accuracy": 0.875,
+        "Clean Test Accuracy": 0.8375,
+        "Training Time (s)": 77.29
+      },
+      {
+        "Method": "Boosting",
+        "Learners": 50,
+        "Train Accuracy": 0.9375,
+        "Validation Accuracy": 0.475,
+        "Clean Test Accuracy": 0.3625,
+        "Training Time (s)": 24.03
+      },
+      {
+        "Method": "Bagging",
+        "Learners": 100,
+        "Train Accuracy": 1.0,
+        "Validation Accuracy": 0.8875,
+        "Clean Test Accuracy": 0.8625,
+        "Training Time (s)": 154.65
+      },
+      {
+        "Method": "Boosting",
+        "Learners": 100,
+        "Train Accuracy": 0.9875,
+        "Validation Accuracy": 0.4375,
+        "Clean Test Accuracy": 0.375,
+        "Training Time (s)": 46.22
+      }
+    ],
+    "robustness": [
+      {
+        "Model": "Single tree",
+        "Clean Accuracy": 0.4625,
+        "Masked Accuracy": 0.4625,
+        "Accuracy Drop (pp)": 0.0,
+        "Clean Confidence": 1.0,
+        "Masked Confidence": 1.0,
+        "Confidence Drop (pp)": 0.0
+      },
+      {
+        "Model": "Bagging",
+        "Clean Accuracy": 0.8875,
+        "Masked Accuracy": 0.8,
+        "Accuracy Drop (pp)": 8.75,
+        "Clean Confidence": 0.3956875,
+        "Masked Confidence": 0.29175,
+        "Confidence Drop (pp)": 10.39375
+      },
+      {
+        "Model": "Boosting",
+        "Clean Accuracy": 0.3625,
+        "Masked Accuracy": 0.225,
+        "Accuracy Drop (pp)": 13.75,
+        "Clean Confidence": 0.12724,
+        "Masked Confidence": 0.14153,
+        "Confidence Drop (pp)": -1.4285
+      }
+    ],
+    "divergent_sample": {
+      "test_idx": 0,
+      "dataset_idx": 2,
+      "true_identity": 0,
+      "bag_clean": 7,
+      "bag_masked": 7,
+      "boost_clean": 2,
+      "boost_masked": 3
+    }
+  },
+  "question_3": {
+    "bias_variance": [
+      {
+        "Model": "Single tree",
+        "Bias squared": 0.382,
+        "Variance": 0.6614,
+        "Mean test accuracy": 0.4783,
+        "Std test accuracy": 0.0505
+      },
+      {
+        "Model": "Bagging",
+        "Bias squared": 0.5096,
+        "Variance": 0.0236,
+        "Mean test accuracy": 0.7879,
+        "Std test accuracy": 0.0366
+      },
+      {
+        "Model": "Boosting",
+        "Bias squared": 0.888,
+        "Variance": 0.0213,
+        "Mean test accuracy": 0.2779,
+        "Std test accuracy": 0.0647
+      }
+    ],
+    "depth_scaling": [
+      {
+        "Depth group": "Shallow",
+        "max_depth": "2",
+        "Tree bias^2": 0.9198,
+        "Tree variance": 0.0426,
+        "Tree mean accuracy": 0.0571,
+        "Bag bias^2": 0.934,
+        "Bag variance": 0.0112,
+        "Bag mean accuracy": 0.1358,
+        "Bagging accuracy gain (pp)": 7.875,
+        "Variance reduction (%)": 73.6674
+      },
+      {
+        "Depth group": "Selected",
+        "max_depth": "None",
+        "Tree bias^2": 0.3817,
+        "Tree variance": 0.6658,
+        "Tree mean accuracy": 0.4762,
+        "Bag bias^2": 0.5092,
+        "Bag variance": 0.0253,
+        "Bag mean accuracy": 0.7817,
+        "Bagging accuracy gain (pp)": 30.5417,
+        "Variance reduction (%)": 96.1929
+      },
+      {
+        "Depth group": "Deep",
+        "max_depth": "32",
+        "Tree bias^2": 0.4117,
+        "Tree variance": 0.5896,
+        "Tree mean accuracy": 0.4475,
+        "Bag bias^2": 0.5235,
+        "Bag variance": 0.0246,
+        "Bag mean accuracy": 0.7712,
+        "Bagging accuracy gain (pp)": 32.375,
+        "Variance reduction (%)": 95.8328
+      }
+    ],
+    "leaf_scaling": [
+      {
+        "Depth group": "Shallow",
+        "max_depth": "2",
+        "Mean leaves": 3.0333,
+        "Mean singleton-leaf fraction": 0.0
+      },
+      {
+        "Depth group": "Selected",
+        "max_depth": "None",
+        "Mean leaves": 40.0,
+        "Mean singleton-leaf fraction": 0.0
+      },
+      {
+        "Depth group": "Deep",
+        "max_depth": "32",
+        "Mean leaves": 36.3667,
+        "Mean singleton-leaf fraction": 0.0
+      }
+    ]
+  },
+  "master_summary": [
+    {
+      "Model": "Single tree",
+      "Clean Test Accuracy": 0.4625,
+      "Masked Test Accuracy": 0.4625,
+      "Accuracy Drop (pp)": 0.0,
+      "Bias Squared": 0.382,
+      "Variance": 0.6614
+    },
+    {
+      "Model": "Bagging",
+      "Clean Test Accuracy": 0.8875,
+      "Masked Test Accuracy": 0.8,
+      "Accuracy Drop (pp)": 8.75,
+      "Bias Squared": 0.5096,
+      "Variance": 0.0236
+    },
+    {
+      "Model": "Boosting",
+      "Clean Test Accuracy": 0.3625,
+      "Masked Test Accuracy": 0.225,
+      "Accuracy Drop (pp)": 13.75,
+      "Bias Squared": 0.888,
+      "Variance": 0.0213
+    }
+  ]
+}

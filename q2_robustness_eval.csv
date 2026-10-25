@@ -1,0 +1,4 @@
+Model,Clean Accuracy,Masked Accuracy,Accuracy Drop (pp),Clean Confidence,Masked Confidence,Confidence Drop (pp)
+Single tree,0.4625,0.4625,0.0,1.0,1.0,0.0
+Bagging,0.8875,0.8,8.75,0.3956875,0.29175,10.39375
+Boosting,0.3625,0.225,13.75,0.12724,0.14153,-1.4285

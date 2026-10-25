@@ -1,0 +1,4 @@
+Model,Clean Test Accuracy,Masked Test Accuracy,Accuracy Drop (pp),Bias Squared,Variance
+Single tree,0.4625,0.4625,0.0,0.382,0.6614
+Bagging,0.8875,0.8,8.75,0.5096,0.0236
+Boosting,0.3625,0.225,13.75,0.888,0.0213

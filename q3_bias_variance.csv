@@ -1,0 +1,4 @@
+Model,Bias squared,Variance,Mean test accuracy,Std test accuracy
+Single tree,0.382,0.6614,0.4783,0.0505
+Bagging,0.5096,0.0236,0.7879,0.0366
+Boosting,0.888,0.0213,0.2779,0.0647

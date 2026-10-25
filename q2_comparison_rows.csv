@@ -1,0 +1,7 @@
+Method,Learners,Train Accuracy,Validation Accuracy,Clean Test Accuracy,Training Time (s)
+Bagging,25,1.0,0.8,0.8375,39.92
+Boosting,25,0.4625,0.3125,0.2,11.6
+Bagging,50,1.0,0.875,0.8375,77.29
+Boosting,50,0.9375,0.475,0.3625,24.03
+Bagging,100,1.0,0.8875,0.8625,154.65
+Boosting,100,0.9875,0.4375,0.375,46.22

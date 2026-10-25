@@ -1,0 +1,4 @@
+Depth group,max_depth,Mean leaves,Mean singleton-leaf fraction
+Shallow,2,3.0333,0.0
+Selected,None,40.0,0.0
+Deep,32,36.3667,0.0
