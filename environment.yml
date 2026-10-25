@@ -1,0 +1,18 @@
+name: ml_assignment_2
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.13
+  - numpy>=1.24.0
+  - scipy>=1.10.0
+  - scikit-learn>=1.2.0
+  - pandas>=2.0.0
+  - matplotlib>=3.7.0
+  - joblib>=1.2.0
+  - pip
+  - pip:
+      - typst>=0.15.0
+      - reportlab>=4.0.0
+      - pypdf>=3.0.0
+      - dulwich>=0.21.0

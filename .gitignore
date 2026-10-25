@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+*.tmp
+test.typ
+test.pdf
+test_cols.typ
+test_cols.pdf
+extract_nb.py
+extracted_notebook.py
+check_outputs.py
